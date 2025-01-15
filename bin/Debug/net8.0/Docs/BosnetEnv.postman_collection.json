@@ -1,0 +1,21 @@
+{
+	"id": "cd2d74d8-bf4a-11ef-80e8-14cb19770f47",
+	"name": "BosnetEnv",
+	"values": [
+		{
+			"key": "endpoint",
+			"value": "http://localhost:3000/api",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "group",
+			"value": "Transaction",
+			"description": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-12-21T07:47:26.878Z",
+	"_postman_exported_using": "Postman/6.7.1"
+}

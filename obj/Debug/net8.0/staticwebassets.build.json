@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "3MV7OH5DEka7yZC7NZfSEeXQ4tZ7GdE+js7KYcGXvp0=",
+  "Source": "Bosnet",
+  "BasePath": "_content/Bosnet",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

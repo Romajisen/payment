@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "e4340309-7532-4b4b-a14c-abd8b4db8924",
+		"name": "Bosnet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5330038"
+	},
+	"item": [
+		{
+			"name": "{{group}}",
+			"item": [
+				{
+					"name": "Tarik",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountId\": \"000109999999\",\r\n  \"currencyId\": \"IDR\",\r\n  \"amount\": 100,\r\n  \"note\": \"TARIK\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/{{group}}/tarik",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"Transaction",
+								"tarik"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/{{group}}/history?accountId=000109999999&startDate=2024-12-01&endDate=2024-12-22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"Transaction",
+								"history"
+							],
+							"query": [
+								{
+									"key": "accountId",
+									"value": "000109999999"
+								},
+								{
+									"key": "startDate",
+									"value": "2024-12-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-12-22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transfer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceAccountId\": \"000109999999\",\r\n  \"currencyId\": \"IDR\",\r\n  \"amount\": 110,\r\n  \"targetAccountIds\": [\r\n    \"000108888888\"\r\n  ],\r\n  \"note\": \"TRANSFER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/{{group}}/transfer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"Transaction",
+								"transfer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Setor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountId\": \"000108888888\",\r\n  \"currencyId\": \"IDR\",\r\n  \"amount\": 1110,\r\n  \"note\": \"SETOR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/{{group}}/setor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"Transaction",
+								"setor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
