@@ -10,19 +10,19 @@ Download link tools below:
 Before run the project :
 1.  Change stringconnection 
 ## struktur project path
-``` bash
+``` 
     Bosnet/ 
     └── appsettings.json
 ```
 ## change to
-``` bash
+``` 
 "ConnectionStrings": {
     "DefaultConnection": "Provider=SQLOLEDB;Data Source={{Hostname}};Initial Catalog={{DatabaseName}};User ID={{UserID}};Password={{Password}};MultipleActiveResultSets=True;Trusted_Connection=True;TrustServerCertificate=True;"
   }
  .... 
 ```
 2.  Copy script dll below on sql server tools:
-    ``` bash
+    ``` 
     -- ----------------------------
     -- Table structure for BOS_History
     -- ----------------------------
@@ -181,16 +181,16 @@ Before run the project :
 
 2. Build or Run project on visual studio / vscode :
     ## command build
-    ``` bash
+    ``` 
     dotnet build
     ```
     ## command run
-    ``` bash
+    ``` 
         dotnet run
     ```
 3.  Swagger or Postman :
     ## import postman json documentation file on structure path on Docs Bosnet.postman_collection.json and BosnetEnv.postman_collection.json
-    `` bash
+    `` 
     Bosnet/
     ├── bin
     ├── Controllers
@@ -219,7 +219,7 @@ Before run the project :
     └── README.MD
     ```
     ## run swagger
-    ``` bash
+    ``` 
 
     http://localhost:3000/swagger/index.html
 
